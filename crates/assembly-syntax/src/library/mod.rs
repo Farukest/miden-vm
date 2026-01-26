@@ -16,6 +16,8 @@ use crate::ast::{AttributeSet, Ident, Path, PathBuf, ProcedureName};
 
 mod error;
 mod module;
+#[cfg(test)]
+mod tests;
 
 pub use module::{ConstantInfo, ItemInfo, ModuleInfo, ProcedureInfo, TypeInfo};
 pub use semver::{Error as VersionError, Version};
